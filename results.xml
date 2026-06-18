@@ -1,0 +1,10 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="18.74226">
+<testsuite name="23.pom_test.spec.ts" timestamp="2026-06-18T02:48:08.789Z" hostname="chromium" tests="1" failures="0" skipped="0" time="16.07" errors="0">
+<testcase name="test" classname="23.pom_test.spec.ts" time="16.07">
+<system-out>
+<![CDATA[Nexus 6
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
