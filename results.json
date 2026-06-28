@@ -4,7 +4,7 @@
       "C:\\Program Files\\nodejs\\node.exe",
       "C:\\Users\\sanje\\Typescript\\Playwright_Automation\\node_modules\\@playwright\\test\\cli.js",
       "test",
-      "23.pom_test.spec.ts",
+      "Practice.spec.ts",
       "--project",
       "chromium",
       "--headed"
@@ -85,14 +85,14 @@
   },
   "suites": [
     {
-      "title": "23.pom_test.spec.ts",
-      "file": "23.pom_test.spec.ts",
+      "title": "Practice.spec.ts",
+      "file": "Practice.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "test",
-          "ok": true,
+          "title": "verify page title",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -105,27 +105,57 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 16070,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 21653,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"My Shop\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m    - waiting for\" https://s.click.aliexpress.com/e/_DmsQZ3X?dp=9c00wcggwwgo0kso&af=34858&cn=\" navigation to finish...\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"My Shop\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m    - waiting for\" https://s.click.aliexpress.com/e/_DmsQZ3X?dp=9c00wcggwwgo0kso&af=34858&cn=\" navigation to finish...\u001b[22m\n\n    at C:\\Users\\sanje\\Typescript\\Playwright_Automation\\tests\\Practice.spec.ts:9:24",
+                    "location": {
+                      "file": "C:\\Users\\sanje\\Typescript\\Playwright_Automation\\tests\\Practice.spec.ts",
+                      "column": 24,
+                      "line": 9
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  7 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m\"title: \"\u001b[39m\u001b[33m,\u001b[39mtitle)\u001b[33m;\u001b[39m\n \u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m10000\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m\"My Shop\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m })\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\sanje\\Typescript\\Playwright_Automation\\tests\\Practice.spec.ts",
+                        "column": 24,
+                        "line": 9
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"My Shop\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m    - waiting for\" https://s.click.aliexpress.com/e/_DmsQZ3X?dp=9c00wcggwwgo0kso&af=34858&cn=\" navigation to finish...\u001b[22m\n\n\n\u001b[0m \u001b[90m  7 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m\"title: \"\u001b[39m\u001b[33m,\u001b[39mtitle)\u001b[33m;\u001b[39m\n \u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m10000\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m\"My Shop\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m })\u001b[0m\n\u001b[2m    at C:\\Users\\sanje\\Typescript\\Playwright_Automation\\tests\\Practice.spec.ts:9:24\u001b[22m"
+                    }
+                  ],
                   "stdout": [
                     {
-                      "text": "Nexus 6\n"
+                      "text": "title:  Redirecting...\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-18T02:48:09.772Z",
+                  "startTime": "2026-06-28T13:46:28.828Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\sanje\\Typescript\\Playwright_Automation\\test-results\\Practice-verify-page-title-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\sanje\\Typescript\\Playwright_Automation\\tests\\Practice.spec.ts",
+                    "column": 24,
+                    "line": 9
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "78b86a55fee039a8e3e1-57a39e1229d5b153e748",
-          "file": "23.pom_test.spec.ts",
-          "line": 6,
+          "id": "c552432dc4d7449de501-26152595840fd90d4bc9",
+          "file": "Practice.spec.ts",
+          "line": 3,
           "column": 5
         }
       ]
@@ -133,11 +163,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-18T02:48:08.725Z",
-    "duration": 18742.260000000002,
-    "expected": 1,
+    "startTime": "2026-06-28T13:46:27.847Z",
+    "duration": 23813.748,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

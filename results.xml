@@ -1,10 +1,36 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="18.74226">
-<testsuite name="23.pom_test.spec.ts" timestamp="2026-06-18T02:48:08.789Z" hostname="chromium" tests="1" failures="0" skipped="0" time="16.07" errors="0">
-<testcase name="test" classname="23.pom_test.spec.ts" time="16.07">
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="23.813748">
+<testsuite name="Practice.spec.ts" timestamp="2026-06-28T13:46:27.923Z" hostname="chromium" tests="1" failures="1" skipped="0" time="21.653" errors="0">
+<testcase name="verify page title" classname="Practice.spec.ts" time="21.653">
 <system-out>
-<![CDATA[Nexus 6
+<![CDATA[title:  Redirecting...
+
+[[ATTACHMENT|test-results\Practice-verify-page-title-chromium\error-context.md]]
 ]]>
 </system-out>
+<failure message="expect(page).toHaveTitle(expected) failed" type="expect.toHaveTitle">
+<![CDATA[  [chromium] › Practice.spec.ts:3:5 › verify page title ────────────────────────────────────────────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected: "My Shop"
+    Received: ""
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        - waiting for" https://s.click.aliexpress.com/e/_DmsQZ3X?dp=9c00wcggwwgo0kso&af=34858&cn=" navigation to finish...
+
+
+       7 |     console.log("title: ",title);
+       8 |     await page.waitForTimeout(10000);
+    >  9 |     await expect(page).toHaveTitle("My Shop");
+         |                        ^
+      10 | })
+        at C:\Users\sanje\Typescript\Playwright_Automation\tests\Practice.spec.ts:9:24
+
+    Error Context: ..\test-results\Practice-verify-page-title-chromium\error-context.md
+]]>
+</failure>
 </testcase>
 </testsuite>
 </testsuites>

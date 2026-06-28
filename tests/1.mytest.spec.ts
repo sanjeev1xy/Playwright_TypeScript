@@ -1,17 +1,5 @@
 import {test,expect} from "@playwright/test";
 
-//Syntax:
-/*
-test("title",()=>{
-
-//step1
-//step2
-//step3
-
-})
-
-*/
-
 test("Verify page title",async ({page})=>
 {
     await page.goto("http://www.automationpractice.pl/index.php");
