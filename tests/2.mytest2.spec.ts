@@ -6,4 +6,5 @@ test("Verify page URL",async ({page})=>
     let url:string=await page.url();
     console.log("Url:",url);
     await expect(page).toHaveURL(/automationpractice/);
+    await page.waitForTimeout(5000);
 })

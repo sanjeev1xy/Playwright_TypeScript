@@ -1,10 +1,17 @@
-import{test,expect} from "@playwright/test";
+import {test,expect} from "@playwright/test";
 
-test("verify page title",async({page})=>
+test("Delete User",async({request})=>
 {
-    await page.goto("http://www.automationpractice.pl/index.php");
-    let title:string=await page.title();
-    console.log("title: ",title);
-    await page.waitForTimeout(10000);
-    await expect(page).toHaveTitle("My Shop");
-})
+    const response=await request.delete("https://reqres.in/api/users/2",
+        {
+            headers:
+            {
+                "x-api-key":"free_user_3ED9dIcjTMQbRmi8Nk72WYQXkT7",
+                "Accept":"application/json"
+            }
+        }
+    );
+    console.log(response.status());
+    expect(response.status()).toBe(204);
+}
+)

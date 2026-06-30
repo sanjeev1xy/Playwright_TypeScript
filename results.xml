@@ -1,36 +1,12 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="23.813748">
-<testsuite name="Practice.spec.ts" timestamp="2026-06-28T13:46:27.923Z" hostname="chromium" tests="1" failures="1" skipped="0" time="21.653" errors="0">
-<testcase name="verify page title" classname="Practice.spec.ts" time="21.653">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="44.984443">
+<testsuite name="P1-Dialog.spec.ts" timestamp="2026-06-30T02:30:44.699Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="43.506" errors="0">
+<testcase name="Handle All Dialogs" classname="P1-Dialog.spec.ts" time="43.506">
 <system-out>
-<![CDATA[title:  Redirecting...
-
-[[ATTACHMENT|test-results\Practice-verify-page-title-chromium\error-context.md]]
+<![CDATA[Alert Message : I am a JS Alert
+Confirm Message : I am a JS Confirm
+Prompt Message : I am a JS prompt
 ]]>
 </system-out>
-<failure message="expect(page).toHaveTitle(expected) failed" type="expect.toHaveTitle">
-<![CDATA[  [chromium] › Practice.spec.ts:3:5 › verify page title ────────────────────────────────────────────
-
-    Error: expect(page).toHaveTitle(expected) failed
-
-    Expected: "My Shop"
-    Received: ""
-    Timeout:  5000ms
-
-    Call log:
-      - Expect "toHaveTitle" with timeout 5000ms
-        - waiting for" https://s.click.aliexpress.com/e/_DmsQZ3X?dp=9c00wcggwwgo0kso&af=34858&cn=" navigation to finish...
-
-
-       7 |     console.log("title: ",title);
-       8 |     await page.waitForTimeout(10000);
-    >  9 |     await expect(page).toHaveTitle("My Shop");
-         |                        ^
-      10 | })
-        at C:\Users\sanje\Typescript\Playwright_Automation\tests\Practice.spec.ts:9:24
-
-    Error Context: ..\test-results\Practice-verify-page-title-chromium\error-context.md
-]]>
-</failure>
 </testcase>
 </testsuite>
 </testsuites>
